@@ -15,7 +15,7 @@ path=`pwd` # Path
 name="\e[1;34mOptiva-Framework" #Name
 VeR="\e[1;31mV1.0.4" # Version
 #Check root exist
-[[ `id -u` -eq 0 ]] > /dev/null 2>&1 || { echo  $red "You must be root to run the script"; exit 1; }
+#[[ `id -u` -eq 0 ]] > /dev/null 2>&1 || { echo  $red "You must be root to run the script"; exit 1; }
 #banner head
 function main_menu()
 {
@@ -40,6 +40,7 @@ echo -e """
 echo -e $yellow "Systems Available : "
 echo -e "$lightgreen 1) $red ✔ Kali Linux / Parrot-Os / Ubuntu "
 echo -e "$lightgreen 2) $red ✔ Black Arch / Arch Linux / Archman"
+echo -e "$lightgreen 0) $red ✔ Termux"
 echo -e "$lightgreen 0) $red ✔ Exit"
 echo -n -e "$lightgreen Select Your System : $red"
 read -e joker
@@ -125,6 +126,44 @@ echo -e $green "#####################################"
 echo -e $green "【!】 Main Menu【!】"
 read -p "pess any key to return ..."
 clear
+;;
+'3')
+echo -e $green "[*] Loading... "
+apt install python2
+echo "[*] installing requirements...."
+pip2 install -r requirements.txt
+pip2 install mechanize
+pip2 install requests
+pip2 install termcolor
+pip2 install --upgrade html5lib
+pip2 install --upgrade beautifulsoup4
+echo -e $green "[*] Moving $red Optiva-Framework folder "
+mkdir $PREFIX/share/optiva
+cp -r ico $PREFIX/share/optiva
+cp -r core $PREFIX/share/optiva
+cp -r modules $PREFIX/share/optiva
+cp -r plugins $PREFIX/share/optiva
+cp installer.sh $PREFIX/share/optiva
+cp requirements.txt $PREFIX/share/optiva
+cp optiva.py $PREFIX/share/optiva
+echo -e $blue "[ ✔ ]Done"
+echo -e $yellow "[*] Creating shortcut command Optiva-Framework"
+echo "#!/data/data/com.termux/files/usr/bin/sh" >> $PREFIX/bin/optiva
+echo "cd $PREFIX/share/optiva" >> /usr/bin/optiva
+echo "exec python2 optiva.py \"\$@\"" >> $PREFIX/bin/optiva
+chmod +x $PREFIX/bin/optiva
+echo -e $green ""
+echo "------------------------------------" 
+echo "| [ ✔ ]installation completed[ ✔ ] |" 
+echo "------------------------------------" 
+echo
+echo -e $green "#####################################"
+echo -e $blue "|Now Just Type In Terminal (optiva)|"
+echo -e $green "#####################################"
+echo -e $green "【!】 Main Menu【!】"
+read -p "pess any key to return ..."
+clear
+
 ;;
 '0')
   echo -e $red " Good Bye !!"
