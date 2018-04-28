@@ -149,7 +149,7 @@ cp optiva.py $PREFIX/share/optiva
 echo -e $blue "[ ✔ ]Done"
 echo -e $yellow "[*] Creating shortcut command Optiva-Framework"
 echo "#!/data/data/com.termux/files/usr/bin/sh" >> $PREFIX/bin/optiva
-echo "cd $PREFIX/share/optiva" >> /usr/bin/optiva
+echo "cd $PREFIX/share/optiva" >> $PREFIX/bin/optiva
 echo "exec python2 optiva.py \"\$@\"" >> $PREFIX/bin/optiva
 chmod +x $PREFIX/bin/optiva
 echo -e $green ""
