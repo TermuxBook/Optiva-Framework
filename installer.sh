@@ -137,33 +137,15 @@ pip2 install requests
 pip2 install termcolor
 pip2 install --upgrade html5lib
 pip2 install --upgrade beautifulsoup4
-echo -e $green "[*] Moving $red Optiva-Framework folder "
-mkdir $PREFIX/share/optiva
-cp -r ico $PREFIX/share/optiva
-cp -r core $PREFIX/share/optiva
-cp -r modules $PREFIX/share/optiva
-cp -r plugins $PREFIX/share/optiva
-cp installer.sh $PREFIX/share/optiva
-cp requirements.txt $PREFIX/share/optiva
-cp optiva.py $PREFIX/share/optiva
 echo -e $blue "[ ✔ ]Done"
-echo -e $yellow "[*] Creating shortcut command Optiva-Framework"
-#echo "#!/data/data/com.termux/files/usr/bin/sh" >> $PREFIX/bin/optiva
-#echo "cd $PREFIX/share/optiva" >> $PREFIX/bin/optiva
-#chmod +x $PREFIX/bin/optiva
-$PREFIX/bin/find -type f -executable -exec termux-fix-shebang \{\} \;
-ln -s $HOME/Optiva-framework/optiva.py /data/data/com.termux/files/usr/bin/
-chmod +x optiva.py
-echo "exec python2 optiva.py \"\$@\"" >> $PREFIX/bin/optiva
-chmod +x /data/data/com.termux/files/usr/bin/optiva
 echo -e $green ""
 echo "------------------------------------" 
 echo "| [ ✔ ]installation completed[ ✔ ] |" 
 echo "------------------------------------" 
 echo
-echo -e $green "#####################################"
-echo -e $blue "|Now Just Type In Terminal (optiva)|"
-echo -e $green "#####################################"
+echo -e $green "#########################################"
+echo -e $blue "| Thanks For Installing Optiva-Framework |"
+echo -e $green "#########################################"
 echo -e $green "【!】 Main Menu【!】"
 read -p "pess any key to return ..."
 clear
