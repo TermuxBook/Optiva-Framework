@@ -155,6 +155,7 @@ $PREFIX/bin/find -type f -executable -exec termux-fix-shebang \{\} \;
 ln -s $HOME/Optiva-framework/optiva.py /data/data/com.termux/files/usr/bin/
 chmod +x optiva.py
 echo "exec python2 optiva.py \"\$@\"" >> $PREFIX/bin/optiva
+chmod +x /data/data/com.termux/files/usr/bin/optiva
 echo -e $green ""
 echo "------------------------------------" 
 echo "| [ ✔ ]installation completed[ ✔ ] |" 
