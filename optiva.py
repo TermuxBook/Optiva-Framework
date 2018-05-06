@@ -67,6 +67,7 @@ class OptivaMain(object):
 		__Facebook__ = "https://facebook.com/kali.linux.pentesting.tutorials"
 		__date__ = datetime.datetime.now()
 		__tools__ = "15"
+		_Ported For Termux_ = "By T4P4N"
 
                 try:
 		    github = raw_input("\n\033[92m[\033[91m0ptiva\033[92m]\033[93m$>")
