@@ -148,10 +148,13 @@ cp requirements.txt $PREFIX/share/optiva
 cp optiva.py $PREFIX/share/optiva
 echo -e $blue "[ ✔ ]Done"
 echo -e $yellow "[*] Creating shortcut command Optiva-Framework"
-echo "#!/data/data/com.termux/files/usr/bin/sh" >> $PREFIX/bin/optiva
-echo "cd $PREFIX/share/optiva" >> $PREFIX/bin/optiva
+#echo "#!/data/data/com.termux/files/usr/bin/sh" >> $PREFIX/bin/optiva
+#echo "cd $PREFIX/share/optiva" >> $PREFIX/bin/optiva
+#chmod +x $PREFIX/bin/optiva
+$PREFIX/bin/find -type f -executable -exec termux-fix-shebang \{\} \;
+ln -s $HOME/Optiva-framework/optiva.py /data/data/com.termux/files/usr/bin/
+chmod +x optiva.py
 echo "exec python2 optiva.py \"\$@\"" >> $PREFIX/bin/optiva
-chmod +x $PREFIX/bin/optiva
 echo -e $green ""
 echo "------------------------------------" 
 echo "| [ ✔ ]installation completed[ ✔ ] |" 
