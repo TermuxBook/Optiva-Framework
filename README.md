@@ -36,7 +36,7 @@ You can use this Framework on your website to check the security of your website
 
 ## ***Installation*** :
 
-$ git clone https://github.com/joker25000/Optiva-Framework
+$ git clone https://github.com/TermuxBook/Optiva-Framework
 
 $ cd Optiva-Framework  
 
