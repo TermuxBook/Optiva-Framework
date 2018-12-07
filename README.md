@@ -5,10 +5,6 @@
 [![Build](https://img.shields.io/badge/Supported_OS-Ubuntu,Kali,Mint,Parrot-blue,Windows,Android.svg)]()
 [![AUR](https://img.shields.io/aur/license/yaourt.svg)]()
 
-# ***Author*** : Joker-Security [ dev-labs ]
-
- ![](https://i.imgur.com/VESr2Et.jpg)
- 
 # ***Description***: 
 
 You can use this Framework on your website to check the security of your website by finding the vulnerability in your website or you can use this tool to Get admin panel search  SQL injection by dork As well as collecting information and encrypting Hash
@@ -55,18 +51,27 @@ $ optiva
 ## ***Screenshot*** :
 <img src="https://i.imgur.com/PwmPoNh.png" width="40%"></img><img src="https://i.imgur.com/aCz0OPg.png" width="40%"></img><img src="https://i.imgur.com/TP4awyu.png" width="40%"></img><img src="https://i.imgur.com/A8dQGdj.png" width="40%"></img>
 
-## ***video tutorial***:
-[![ Optiva-Framework - Web Application Scanner ](https://i.ytimg.com/vi/eF11o6yLlv8/hqdefault.jpg)](https://www.youtube.com/watch?v=eF11o6yLlv8&t=31s)
-
 ## ***About*** :
+web
+🌏 https://termuxbookhacks.blogspot.com/
 
-$ Twitter : https://twitter.com/SecurityJoker
+Facebook
+📬 https://m.facebook.com/Termux-Book-2190813487861670/?ref=bookmarks
 
-$ YOUTUBE : https://www.youtube.com/c/Professionalhacker25
+Twitter
+🐤 https://mobile.twitter.com/termuxbook
 
-$ FACEBOOK: https://facebook.com/kali.linux.pentesting.tutorials
+Pintrest
+📌 https://www.pinterest.com/termuxbook/
 
-$ Tested On : Kali Linux /  Parrot Os / Ubuntu / BlankOn Linux / Archman / ArcoLinux / Termux (Android)
+Instagram
+📊 https://www.instagram.com/termux_book/
 
+Reddit
+🌀 https://www.reddit.com/u/TermuxBook/
 
+Whatsapp
+📤 https://chat.whatsapp.com/BX18dFQgc24LAFM0TpFSFH
 
+YouTube
+▶️ https://www.youtube.com/TermuxBook
